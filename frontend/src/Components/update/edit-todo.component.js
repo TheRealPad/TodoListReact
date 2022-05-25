@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import '../create/create-todo.component.css'
 import StudentForm from "../TodoForm";
 import { useParams } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const EditTodo = (props) => {
 const [formValues, setFormValues] = useState({
@@ -41,13 +43,33 @@ useEffect(() => {
 }, [id]);
 
 return (
-	<StudentForm
-	initialValues={formValues}
-	onSubmit={onSubmit}
-	enableReinitialize
-	>
-	Update Student
-	</StudentForm>
+	<div className="create-student">
+		<StudentForm
+		initialValues={formValues}
+		onSubmit={onSubmit}
+		enableReinitialize
+		>
+		Update Student
+		</StudentForm>
+		<div className="redirection">
+			<div>
+				<Link to={"/"} 
+            	    className="nav-link">
+            	    <button type="button">
+            	        Home
+            	    </button>
+        		</Link>
+			</div>
+			<div>
+				<Link to={"/student-list"} 
+            	    className="nav-link">
+            	    <button type="button">
+            	        View
+            	    </button>
+        		</Link>
+			</div>
+		</div>
+	</div>
 );
 };
 

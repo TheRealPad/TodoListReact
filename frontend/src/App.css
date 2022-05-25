@@ -7,11 +7,13 @@ body {
     border-radius: 8px;
     padding: 5px;
     background-color: rgb(17, 17, 213);
+    box-shadow: -5px 5px 2px black;
 }
 
 .elem-nav {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-cent;
+    align-items: center;
     gap: 1%;
 }
 
@@ -19,6 +21,7 @@ body {
     background-color: transparent;
     margin: 5px;
     border-radius: 4px;
+    border-color: transparent;
 }
 
 .button-nav:hover {
@@ -39,4 +42,8 @@ body {
     border:  5px solid black;
     display: flex;
     flex-direction: column;
+}
+
+.icon-button {
+    font-size: 300%;
 }

@@ -2,6 +2,7 @@ import React from "react";
 import './App.css';
 import { Link } from "react-router-dom";
 import { Navbar, Container } from "react-bootstrap";
+import { FaHome } from 'react-icons/fa';
 
 function App() {
   return (
@@ -9,26 +10,26 @@ function App() {
       <header className="App-header">
         <Navbar className="nav-bar" bg="dark" variant="dark">
           <Container className="elem-nav">
-              <div className="button-nav">
+              <div>
                 <Link to={"/"} 
                   className="nav-link">
-                    <button type="button">
-                      React MERN Stack App
+                    <button className="button-nav" type="button">
+                      <FaHome className="icon-button"/>
                     </button>
                 </Link>
               </div>
-              <div className="button-nav">
+              <div>
                 <Link to={"/create-student"} 
                   className="nav-link">
-                    <button type="button">
+                    <button className="button-nav" type="button">
                       Add todo
                     </button>
                 </Link>
               </div>
-              <div className="button-nav">
+              <div>
                 <Link to={"/student-list"} 
                   className="nav-link">
-                    <button type="button">
+                    <button className="button-nav" type="button">
                       Todo list
                     </button>
                 </Link>
