@@ -1,0 +1,42 @@
+body {
+    background-color: whitesmoke;
+}
+
+.nav-bar {
+    margin: 10px;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: rgb(17, 17, 213);
+}
+
+.elem-nav {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1%;
+}
+
+.button-nav {
+    background-color: transparent;
+    margin: 5px;
+    border-radius: 4px;
+}
+
+.button-nav:hover {
+    background-color: rgba(128, 128, 128, .2);
+}
+
+.nav-bar::button {
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+}
+
+.box {
+    background-color: whitesmoke;
+    margin: 5%;
+    padding: 2%;
+    border-radius: 12px;
+    border:  5px solid black;
+    display: flex;
+    flex-direction: column;
+}

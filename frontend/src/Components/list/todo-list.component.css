@@ -1,0 +1,44 @@
+.tab-title {
+    color: black;
+    background-color: rgba(128, 128, 128, .3);
+}
+
+/* .elem-title {
+    border: 2px solid grey;
+}
+
+.table-wrapper {
+    margin-left: 35%;
+    margin-top: 10%;
+} */
+
+.btnHome {
+    margin-left: 50%;
+    border: none;
+    background-color: transparent;
+}
+
+.btnHome:hover {
+    color: red;
+}
+
+.btnCreate {
+    margin-left: 50%;
+    border: none;
+    background-color: transparent;
+}
+
+.btnCreate:hover {
+    color: red;
+}
+
+.redirection {
+    display: flex;
+    flex-direction: column;
+}
+
+.tables {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

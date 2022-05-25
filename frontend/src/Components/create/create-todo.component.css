@@ -1,0 +1,14 @@
+.create-student {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7%;
+}
+
+.redirection {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}

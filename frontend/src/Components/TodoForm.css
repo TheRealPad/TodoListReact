@@ -1,0 +1,19 @@
+.info-form {
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+    border-left: 2px solid black;
+    border-bottom: 1px solid black;
+    border-right: 2px solid grey;
+    border-top: 1px solid grey;
+    padding-left: 1px;
+}
+
+.button-send {
+    margin-top: 10%;
+    margin-left: 25%;
+    background-color: seagreen;
+    border-radius: 8px;
+    border: 0px solid transparent;
+    padding: 5px;
+}
