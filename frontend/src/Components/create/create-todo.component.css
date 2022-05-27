@@ -12,3 +12,13 @@
     justify-content: space-between;
     gap: 30px;
 }
+
+.button-home {
+    background-color: transparent;
+    border-radius: 12px;
+    border: none;
+}
+
+.button-home:hover {
+    color: red;
+}

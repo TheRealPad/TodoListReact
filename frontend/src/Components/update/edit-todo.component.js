@@ -4,6 +4,7 @@ import '../create/create-todo.component.css'
 import StudentForm from "../TodoForm";
 import { useParams } from 'react-router-dom';
 import { Link } from "react-router-dom";
+import { FaHome } from 'react-icons/fa';
 
 const EditTodo = (props) => {
 const [formValues, setFormValues] = useState({
@@ -43,6 +44,7 @@ useEffect(() => {
 
 return (
 	<div className="create-student">
+		<h1>Update Todo</h1>
 		<StudentForm
 		initialValues={formValues}
 		onSubmit={onSubmit}
@@ -54,8 +56,8 @@ return (
 			<div>
 				<Link to={"/"} 
             	    className="nav-link">
-            	    <button type="button">
-            	        Home
+            	    <button type="button" className="button-home">
+            	        <FaHome/> Home
             	    </button>
         		</Link>
 			</div>

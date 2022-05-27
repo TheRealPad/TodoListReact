@@ -7,12 +7,12 @@ import './TodoForm.css';
 const TodoForm = (props) => {
 const validationSchema = Yup.object().shape({
 	title: Yup.string().required("Required"),
-	description: Yup.string().required("Required"),
+	description: Yup.string(),
 	finish: Yup.boolean(),
 });
 
 return (
-	<div className="form-wrapper">
+	<div className="box-form">
 	<Formik {...props} validationSchema={validationSchema}>
 		<Form>
 		<FormGroup>
