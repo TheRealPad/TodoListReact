@@ -24,10 +24,10 @@ npm start
 # API
 routes:
 ```
-/create-todo : working
-/ : working
-/update-todo/:id : working
-/delete-todo/:id : working
+/create-todo : add new todo to the DB
+/get-todo : get all todo from the DB
+/update-todo/:id : update the todo with the given id
+/delete-todo/:id : delete the todo with the given id
 ```
 
 # DATA
