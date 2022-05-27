@@ -20,7 +20,6 @@ root.render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/create-student" element={<CreateTodo />} />
-      <Route path="/student-list" element={<TodoList />} />
       <Route path="/edit-todo/:id" element={<EditTodo />} />
     </Routes>
   </BrowserRouter>

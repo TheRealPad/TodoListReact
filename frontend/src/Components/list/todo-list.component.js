@@ -3,7 +3,7 @@ import axios from "axios";
 import StudentTableRow from "./TodoTableRow";
 import './todo-list.component.css';
 import { Link } from "react-router-dom";
-import { FaHome, FaDatabase } from 'react-icons/fa';
+import { FaDatabase } from 'react-icons/fa';
 
 const TodoList = () => {
 const [students, setStudents] = useState([]);
@@ -29,11 +29,6 @@ return (
 	<div className="table-wrapper">
 		<tbody className="tables">{DataTable()}</tbody>
 		<div className="redirection">
-			<Link to={"/"}>
-    		    <button className="btnHome" type="button">
-    		        <FaHome/> Home
-    		    </button>
-    		</Link>
 			<Link to={"/create-student"}>
     		    <button className="btnCreate" type="button">
     		        <FaDatabase/> Create

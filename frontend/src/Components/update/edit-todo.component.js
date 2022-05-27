@@ -22,12 +22,11 @@ const onSubmit = (studentObject) => {
 	)
 	.then((res) => {
 		if (res.status === 200) {
-			alert("Student successfully updated");
-			props.history.push("/student-list");
+			window.location.replace("/")
 		} else
 			Promise.reject();
 	})
-	.catch((err) => alert("Something went wrong"));
+	.catch((err) => alert(err));
 };
 
 useEffect(() => {
@@ -57,14 +56,6 @@ return (
             	    className="nav-link">
             	    <button type="button">
             	        Home
-            	    </button>
-        		</Link>
-			</div>
-			<div>
-				<Link to={"/student-list"} 
-            	    className="nav-link">
-            	    <button type="button">
-            	        View
             	    </button>
         		</Link>
 			</div>

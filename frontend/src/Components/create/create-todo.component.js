@@ -13,7 +13,7 @@ const onSubmit = studentObject => {
 	studentObject)
 	.then(res => {
 		if (res.status === 200)
-			window.location.reload();
+			window.location.replace("/")
 		else
 			Promise.reject()
 	})
@@ -34,14 +34,6 @@ return(
             	    className="nav-link">
             	    <button type="button">
             	        Home
-            	    </button>
-        		</Link>
-			</div>
-			<div>
-				<Link to={"/student-list"} 
-            	    className="nav-link">
-            	    <button type="button">
-            	        View
             	    </button>
         		</Link>
 			</div>
