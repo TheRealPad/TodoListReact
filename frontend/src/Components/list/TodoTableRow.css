@@ -33,6 +33,7 @@
     flex-direction: column;
     min-width: 200px;
     min-height: 200px;
+    max-width: 200px;
     padding: 5px;
     justify-content: space-between;
     border-radius: 12px;

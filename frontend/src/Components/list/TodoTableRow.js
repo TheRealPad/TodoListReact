@@ -32,12 +32,15 @@ const TodoTableRow = (props) => {
 	return (
 		<tr className="box-elem">
 			<div className="data-elem">
-				<p className="elem-title">Task</p>
-				<td>{title}</td>
-				<p className="elem-title">description</p>
-				<td>{description}</td>
-				<td>{finish}</td>
-				<Padou finish={finish}/>
+				<div>
+					<p className="elem-title">Task</p>
+					<td className="loooool">{title}</td>
+					<p className="elem-title">description</p>
+					<td>{description}</td>
+				</div>
+				<div>
+					<Padou finish={finish}/>
+				</div>
 			</div>
 			<div className="button-elem">
 				<div>

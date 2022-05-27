@@ -43,24 +43,19 @@ useEffect(() => {
 }, [id]);
 
 return (
-	<div className="create-student">
+	<div className="create-todo">
 		<h1>Update Todo</h1>
-		<StudentForm
-		initialValues={formValues}
-		onSubmit={onSubmit}
-		enableReinitialize
-		>
-		Update Student
+		<StudentForm initialValues={formValues}
+		onSubmit={onSubmit}>
+			Update todo
 		</StudentForm>
 		<div className="redirection">
-			<div>
-				<Link to={"/"} 
-            	    className="nav-link">
-            	    <button type="button" className="button-home">
-            	        <FaHome/> Home
-            	    </button>
-        		</Link>
-			</div>
+			<Link to={"/"} 
+                className="nav-link">
+                <button className="button-home">
+                    <FaHome/> Home
+                </button>
+        	</Link>
 		</div>
 	</div>
 );

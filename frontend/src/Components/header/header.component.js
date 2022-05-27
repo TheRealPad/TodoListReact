@@ -6,13 +6,13 @@ import { FaHome } from 'react-icons/fa';
 
 const Header = () => {
   return (
-    <header className="App-header">
+    <header>
       <Navbar className="nav-bar" bg="dark" variant="dark">
         <Container className="elem-nav">
             <div>
               <Link to={"/"} 
                 className="nav-link">
-                  <button className="button-nav" type="button">
+                  <button className="button-nav">
                     <FaHome className="icon-button"/>
                   </button>
               </Link>
@@ -20,7 +20,7 @@ const Header = () => {
             <div>
               <Link to={"/create-student"} 
                 className="nav-link">
-                  <button className="button-nav" type="button">
+                  <button className="button-nav">
                     Add todo
                   </button>
               </Link>

@@ -22,18 +22,17 @@ const onSubmit = studentObject => {
 }
 
 return(
-	<div className="create-student">
+	<div className="create-todo">
 		<h1>New Todo</h1>
 		<TodoForm initialValues={formValues}
-		onSubmit={onSubmit}
-		enableReinitialize>
-		Create Student
+		onSubmit={onSubmit}>
+			Add todo
 		</TodoForm>
 		<div className="redirection">
 			<div>
 				<Link to={"/"} 
             	    className="nav-link">
-            	    <button type="button" className="button-home">
+            	    <button className="button-home">
             	        <FaHome/> Home
             	    </button>
         		</Link>
