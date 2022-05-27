@@ -31,9 +31,9 @@ routes:
 ```
 
 # DATA
-Table Student:
+Table Todo:
 ```
-name: String
+task: String
 description: String
 finish: Boolean
 ```
