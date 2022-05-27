@@ -1,0 +1,9 @@
+.list-footer {
+    background-color: rgba(128, 128, 128, .3);
+    min-height: 50px;
+    text-align: center;
+    margin-top: 1%;
+    padding: 1%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
