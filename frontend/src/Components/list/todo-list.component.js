@@ -10,7 +10,7 @@ const [students, setStudents] = useState([]);
 
 useEffect(() => {
 	axios
-	.get("http://localhost:4000/todos/")
+	.get("http://localhost:4000/todos/get-todo")
 	.then(({ data }) => {
 		setStudents(data);
 	})

@@ -14,7 +14,7 @@ router.post("/create-todo", (req, res, next) => {
 	});
 });
 
-router.get("/", (req, res) => {
+router.get("/get-todo", (req, res) => {
 	todoSchema.find((error, data) => {
 		if (error) {
 			return next(error);
