@@ -22,13 +22,39 @@ npm start
 ```
 
 # API
-routes:
+## /create-todo
+Input:
 ```
-/create-todo : add new todo to the DB
-/get-todo : get all todo from the DB
-/update-todo/:id : update the todo with the given id
-/delete-todo/:id : delete the todo with the given id
+title: string
+description: string
+finish: bool
+
 ```
+Output: New task created (json)
+
+## /get-todo
+Input: None
+
+Output: json
+## /update-todo/:id
+Input:
+```
+id: any
+title: string
+description: string
+finish: bool
+```
+Output: task update (json)
+
+## /delete-todo/:id
+Input:
+```
+id: any
+title: string
+description: string
+finish: bool
+```
+Output: task deleted (json)
 
 # DATA
 Table Todo:
