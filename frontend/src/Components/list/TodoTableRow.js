@@ -5,12 +5,12 @@ import axios from "axios";
 import './TodoTableRow.css'
 import { FaTrash, FaPenNib, FaRegThumbsUp, FaRegThumbsDown } from	'react-icons/fa'
 
-function Padou(props) {
+function Finish(props) {
 	const finish = props.finish;
 	if (finish) {
-		return <p className="finish-task">Finish <FaRegThumbsUp/></p>
+		return <p className="finish-task"><FaRegThumbsUp/></p>
 	}
-	return <p className="not-finish-task">Not finish <FaRegThumbsDown/></p>
+	return <p className="not-finish-task"><FaRegThumbsDown/></p>
 }
 
 const TodoTableRow = (props) => {
@@ -33,13 +33,13 @@ const TodoTableRow = (props) => {
 		<tr className="box-elem">
 			<div className="data-elem">
 				<div>
-					<p className="elem-title">Task</p>
-					<td className="loooool">{title}</td>
-					<p className="elem-title">description</p>
-					<td>{description}</td>
-				</div>
-				<div>
-					<Padou finish={finish}/>
+					<td className="elem-title">{title}</td>
+					<br/>
+					<div className="elem-end">
+						<td>{description}</td>
+						<Finish finish={finish}/>
+					</div>
+					<br/>
 				</div>
 			</div>
 			<div className="button-elem">

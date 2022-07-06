@@ -2,12 +2,13 @@ import React from "react";
 import './header.component.css';
 import { Link } from "react-router-dom";
 import { Navbar, Container } from "react-bootstrap";
-import { FaHome } from 'react-icons/fa';
+import { FaHome, FaUserAlt } from 'react-icons/fa';
 
 const Header = () => {
   return (
     <header>
       <Navbar className="nav-bar" bg="dark" variant="dark">
+        <div>
         <Container className="elem-nav">
             <div>
               <Link to={"/"} 
@@ -26,6 +27,10 @@ const Header = () => {
               </Link>
             </div>
         </Container>
+        </div>
+        <div className="profil">
+          Pierre-Alexandre <FaUserAlt/>
+        </div>
       </Navbar>
     </header>
   );

@@ -1,9 +1,16 @@
 .nav-bar {
-    margin: 10px;
-    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding: 5px;
-    background-color: rgb(17, 17, 213);
-    box-shadow: -5px 5px 2px black;
+    background-color: transparent;
+    position: sticky;
+    padding-right: 3%;
+}
+
+.nav-bar:hover {
+    background-color: rgb(128, 128, 128, 0.4);
 }
 
 .elem-nav {
@@ -42,4 +49,8 @@
 
 .icon-button {
     font-size: 300%;
+}
+
+.profil {
+    text-align: center;
 }
