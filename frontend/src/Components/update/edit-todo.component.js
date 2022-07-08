@@ -4,11 +4,12 @@ import '../create/create-todo.component.css'
 import StudentForm from "../TodoForm";
 import { useParams } from 'react-router-dom';
 import { Link } from "react-router-dom";
-import { FaHome } from 'react-icons/fa';
+import { FaHome, FaExchangeAlt } from 'react-icons/fa';
+import Header from "./../header/header.component";
 
 const EditTodo = (props) => {
 const [formValues, setFormValues] = useState({
-	name: "",
+	title: "",
 	description: "",
 	finish: "",
 });
@@ -38,24 +39,30 @@ useEffect(() => {
 	.then((res) => {
 		const { title, description, rollno, finish } = res.data;
 		setFormValues({ title, description, rollno, finish });
+		formValues.title = title;
+		formValues.description = description;
+		formValues.finish = finish;
 	})
 	.catch((err) => console.log(err));
 }, [id]);
 
 return (
-	<div className="create-todo">
-		<h1>Update Todo</h1>
-		<StudentForm initialValues={formValues}
-		onSubmit={onSubmit}>
-			Update todo
-		</StudentForm>
-		<div className="redirection">
-			<Link to={"/"} 
-                className="nav-link">
-                <button className="button-home">
-                    <FaHome/> Home
-                </button>
-        	</Link>
+	<div>
+		<Header/>
+		<div className="create-todo">
+			<h1>Update Todo</h1>
+			<StudentForm initialValues={formValues}
+			onSubmit={onSubmit}>
+				<FaExchangeAlt/> Update todo
+			</StudentForm>
+			<div className="redirection">
+				<Link to={"/"} 
+    	            className="nav-link">
+    	            <button className="button-home">
+    	                <FaHome/> Home
+    	            </button>
+    	    	</Link>
+			</div>
 		</div>
 	</div>
 );

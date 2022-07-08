@@ -3,7 +3,8 @@ import axios from 'axios';
 import TodoForm from "../TodoForm";
 import './create-todo.component.css'
 import { Link } from "react-router-dom";
-import { FaHome } from 'react-icons/fa';
+import { FaHome, FaPlus } from 'react-icons/fa';
+import Header from "./../header/header.component";
 
 const CreateTodo = () => {
 const [formValues] =
@@ -22,20 +23,23 @@ const onSubmit = studentObject => {
 }
 
 return(
-	<div className="create-todo">
-		<h1>New Todo</h1>
-		<TodoForm initialValues={formValues}
-		onSubmit={onSubmit}>
-			Add todo
-		</TodoForm>
-		<div className="redirection">
-			<div>
-				<Link to={"/"} 
-            	    className="nav-link">
-            	    <button className="button-home">
-            	        <FaHome/> Home
-            	    </button>
-        		</Link>
+	<div>
+		<Header />
+		<div className="create-todo">
+			<h1><FaPlus/> New Todo</h1>
+			<TodoForm initialValues={formValues}
+			onSubmit={onSubmit}>
+				<FaPlus/> Add todo
+			</TodoForm>
+			<div className="redirection">
+				<div>
+					<Link to={"/"} 
+    	        	    className="nav-link">
+    	        	    <button className="button-home">
+    	        	        <FaHome/> Home
+    	        	    </button>
+    	    		</Link>
+				</div>
 			</div>
 		</div>
 	</div>

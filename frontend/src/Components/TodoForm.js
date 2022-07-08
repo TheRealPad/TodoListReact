@@ -12,28 +12,28 @@ const validationSchema = Yup.object().shape({
 
 return (
 	<div className="box-form">
-	<Formik {...props} validationSchema={validationSchema}>
-		<Form className="display-form">
-			<div>
-					<p className="info-form">Task</p>
+		<Formik {...props} validationSchema={validationSchema}>
+			<Form className="display-form">
+				<div>
+					<p>Task</p>
 					<Field name="title" type="text" />
 					<ErrorMessage name="title" />
-					<p className="info-form">Description</p>
+					<p>Description</p>
 					<Field name="description" type="text" />
 					<ErrorMessage name="description" />
-				<div className="display-bool">
-					<p className="info-form">State</p>
-					<Field name="finish" type="checkbox" />
-					<ErrorMessage name="finish" />
+					<div className="display-bool">
+						<p>State</p>
+						<Field name="finish" type="checkbox" />
+						<ErrorMessage name="finish" />
+					</div>
 				</div>
-			</div>
-			<div>
-				<button className="button-send">
-					{props.children}
-				</button>
-			</div>
-		</Form>
-	</Formik>
+				<div>
+					<button className="button-send">
+						{props.children}
+					</button>
+				</div>
+			</Form>
+		</Formik>
 	</div>
 );
 };
