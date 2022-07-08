@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import CreateTodo from './Components/create/create-todo.component';
-import TodoList from './Components/list/todo-list.component';
 import EditTodo from './Components/update/edit-todo.component';
 import reportWebVitals from './reportWebVitals';
 import {

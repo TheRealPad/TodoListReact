@@ -44,7 +44,7 @@ useEffect(() => {
 		formValues.finish = finish;
 	})
 	.catch((err) => console.log(err));
-}, [id]);
+});
 
 return (
 	<div>
