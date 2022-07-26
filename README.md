@@ -56,10 +56,13 @@ finish: bool
 ```
 Output: task deleted (json)
 
+## Test with Postman
+For all route wich need data, you can add add it in the body as x-www-form-urlencoded
+
 # DATA
 Table Todo:
 ```
-task: String
+title: String
 description: String
 finish: Boolean
 ```
