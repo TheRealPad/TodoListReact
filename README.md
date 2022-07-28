@@ -1,7 +1,7 @@
 # API-reactjs-nodejs
 Simple CRUD API in react and nodejs, with express and axios
 
-Database: mongodb
+Database: mongodb (https://www.mongodb.com/docs/manual/installation/)
 
 ## install dependencies
 In frontend/ and backend/ :
